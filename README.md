@@ -1,6 +1,19 @@
 # PySpark-SpringBoot-Analytics
 End-to-end analytics and reporting platform using PySpark ETL and Spring Boot REST APIs
 
+---
+
+## Project Overview
+
+This project demonstrates an **end-to-end analytics and reporting pipeline**:
+
+1. **PySpark ETL**: Processes raw transaction data (CSV) into cleaned and aggregated datasets.
+2. **Spring Boot Backend**: Reads processed data and exposes REST APIs for analytics and reporting.
+3. **Reporting**: Provides structured outputs (JSON / Parquet) that can be consumed by dashboards or other services.
+
+**Purpose:** This project simulates a financial or regulatory reporting system, showing the ability to handle large-scale ETL, structured data, and API-driven reporting.
+
+---
 ## Architecture Diagram
 
 ```mermaid

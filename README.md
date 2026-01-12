@@ -13,6 +13,14 @@ This project demonstrates an **end-to-end analytics and reporting pipeline**:
 
 **Purpose:** This project simulates a financial or regulatory reporting system, showing the ability to handle large-scale ETL, structured data, and API-driven reporting.
 
+### Scaling for Large Datasets
+
+- In real banking environments, daily transactions can reach millions per branch and product type.
+- To ensure our ETL pipeline can handle large datasets:
+  1. **Repartition the DataFrame** by `txn_date` and `branch_name` to distribute data evenly across Spark partitions.
+  2. **Partition the output table** by `txn_date` and `branch_name` for faster queries and dashboard updates.
+- This setup allows processing **months of historical data** efficiently without hitting performance bottlenecks.
+
 ---
 ## Architecture Diagram
 

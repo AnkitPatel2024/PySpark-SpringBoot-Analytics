@@ -1,0 +1,6 @@
+branch_id,branch_name,city,country,region,manager,open_date,branch_type,assets_usd
+B001,New York,New York,USA,North East,Alice Johnson,2005-03-15,Commercial,1200000
+B002,Chicago,Chicago,USA,Midwest,Bob Smith,2007-07-22,Commercial,950000
+B003,London,London,UK,Europe,Clara Evans,2010-01-10,Investment,2500000
+B004,Tokyo,Tokyo,Japan,Asia-Pacific,Daisuke Tanaka,2012-05-18,Investment,3000000
+

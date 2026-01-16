@@ -1,0 +1,6 @@
+transaction_id,date,account_id,branch,transaction_type,amount,currency,counterparty,status,product_type
+1001,2026-01-01,ACC1001,New York,Deposit,500000,USD,-,Completed,Commercial Loan
+1002,2026-01-01,ACC2001,London,Withdrawal,200000,GBP,-,Completed,Investment Account
+1003,2026-01-02,ACC1001,New York,Transfer,100000,USD,ACC3001,Pending,Commercial Loan
+1004,2026-01-03,ACC3001,Tokyo,Deposit,3000000,JPY,-,Completed,Investment Account
+1005,2026-01-03,ACC2001,London,Transfer,150000,GBP,ACC1001,Completed,Investment Account

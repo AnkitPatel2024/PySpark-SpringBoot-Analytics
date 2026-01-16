@@ -25,7 +25,21 @@ This project demonstrates an **a production-grade data lifecycle designed for fi
 ---
 ## 🏗️ Architecture Diagram
 
-
+```mermaid
+graph TD
+    A[Data Source / Raw CSV] --> B[PySpark ETL & Databricks]
+    B --> C[(PostgreSQL Database)]
+    C --> D[Spring Boot Backend]
+    D --> E[REST API Endpoints]
+    E --> F[Streamlit Dashboard]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:2px
+    style D fill:#ffb,stroke:#333,stroke-width:2px
+    style E fill:#fbf,stroke:#333,stroke-width:2px
+    style F fill:#fbb,stroke:#333,stroke-width:2px
+```
 
 ## 🛠️ The Tech Stack
 * **Backend:** Java 17, Spring Boot 3, Spring Data JPA, RESTful APIs, Lombok

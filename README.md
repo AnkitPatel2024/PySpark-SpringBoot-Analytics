@@ -55,11 +55,11 @@ docker run --name pg-backend \
   -e POSTGRES_USER=user \
   -e POSTGRES_PASSWORD=password \
   -p 5432:5432 -d postgres
-
+```
 ### 2. Backend API
 ```bash
 ./mvnw spring-boot:run
-
+```
 ### 3. Dashboard
 ```bash
 streamlit run app.py

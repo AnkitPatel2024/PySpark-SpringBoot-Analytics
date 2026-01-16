@@ -32,6 +32,7 @@ graph TD
     C --> D[Spring Boot Backend]
     D --> E[REST API]
     E --> F[Dashboard / Reporting]
+
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style B fill:#bbf,stroke:#333,stroke-width:2px
     style C fill:#bfb,stroke:#333,stroke-width:2px

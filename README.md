@@ -25,20 +25,34 @@ This project demonstrates an **a production-grade data lifecycle designed for fi
 ---
 ## 🏗️ Architecture Diagram
 
-```mermaid
-graph TD
-    A[Data Source / Streaming Input] --> B[PySpark ETL]
-    B --> C[Processed Output]
-    C --> D[Spring Boot Backend]
-    D --> E[REST API]
-    E --> F[Dashboard / Reporting]
 
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#bbf,stroke:#333,stroke-width:2px
-    style C fill:#bfb,stroke:#333,stroke-width:2px
-    style D fill:#ffb,stroke:#333,stroke-width:2px
-    style E fill:#fbf,stroke:#333,stroke-width:2px
-    style F fill:#fbb,stroke:#333,stroke-width:2px
+
+## 🛠️ The Tech Stack
+* **Backend:** Java 17, Spring Boot 3, Spring Data JPA, RESTful APIs, Lombok
+* **Database:** PostgreSQL (Production), H2 (In-memory Testing), Docker
+* **Data Engineering:** PySpark, Databricks, Pandas
+* **Frontend:** Python, Streamlit, Plotly
+* **Testing:** JUnit 5, Mockito, MockMvc, AssertJ
 
 ---
+
+## 📉 Interactive Dashboard
+The dashboard provides a bird's-eye view of financial health with the following features:
+
+* **Dynamic Visuals**: Bar charts for "Total Volume" and "Transaction Count" segmented by branch and product type.
+* **Flexible Filtering**: Users can filter by specific dates or switch granularities to view monthly performance trends.
+
+---
+
+## ⚙️ How to Run
+
+### 1. Database Setup
+The environment is containerized using Docker for consistency and ease of deployment. Run the following command to start the PostgreSQL instance:
+
+```bash
+docker run --name pg-backend \
+  -e POSTGRES_DB=transactions_db \
+  -e POSTGRES_USER=user \
+  -e POSTGRES_PASSWORD=password \
+  -p 5432:5432 -d postgres
 
